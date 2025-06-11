@@ -1,0 +1,5 @@
+@use "./mixins" as *;
+
+@function breakpoints($breakpoint) {
+    @return map-get($grid-breakpoints, $breakpoint);
+}
