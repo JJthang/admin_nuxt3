@@ -4,7 +4,7 @@ import { LOCALES_OBJ } from "./utils/constants";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
@@ -40,6 +40,7 @@ export default defineNuxtConfig({
     vueI18n: "./utils/i18n/i18n.config.ts",
     strategy: "prefix",
     locales: LOCALES_OBJ,
+    restructureDir: "",
     langDir: "locales/",
     lazy: true, // Only load language files when needed (increase performance, reduce initial bundle size).
     compilation: {

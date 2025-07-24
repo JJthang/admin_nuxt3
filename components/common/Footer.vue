@@ -36,10 +36,3 @@
     </BaseContainer>
   </div>
 </template>
-
-<script setup>
-import { BaseContainer } from "#components";
-</script>
-
-<style lang="scss" scoped>
-</style>
