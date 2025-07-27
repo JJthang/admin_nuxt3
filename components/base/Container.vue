@@ -1,5 +1,5 @@
 <template>
-  <div class="mystays-container max-w-7xl mx-auto px-4 lg:px-0">
+  <div class="mystays-container max-w-7xl mx-auto px-4 lg:px-0" v-on="$attrs">
     <slot></slot>
   </div>
 </template>

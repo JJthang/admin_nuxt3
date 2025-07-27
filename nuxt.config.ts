@@ -1,6 +1,7 @@
 import tailwindcss from "@tailwindcss/vite";
 import { I18N_REDIRECT } from "./utils/cookies";
 import { LOCALES_OBJ } from "./utils/constants";
+import svgLoader from "vite-svg-loader";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -13,18 +14,21 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/i18n",
     "@nuxt/image",
+    "@vueuse/nuxt",
+    "dayjs-nuxt",
+    "@nuxtjs/device",
   ],
   app: {
     head: {
       title:
         "MYSTAYS Hotels & Resorts | Your Hotel in Japan| Official Booking Website",
       charset: "utf-16",
-      viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+      viewport: "width=device-width, initial-scale=1",
     },
   },
   imports: {
     autoImport: true,
-    dirs: ["composables/**", "utils/**", "modules/**"],
+    dirs: ["composables/**", "utils/**", "modules/**", "components/**"],
   },
   components: [
     {
@@ -69,7 +73,7 @@ export default defineNuxtConfig({
     configPath: "tailwind.config.ts",
   },
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss(), svgLoader()],
     css: {
       preprocessorOptions: {
         scss: {

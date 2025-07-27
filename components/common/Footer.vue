@@ -23,14 +23,14 @@
           class="flex flex-col lg:flex-row items-center lg:mr-10 cursor-pointer"
         >
           <MhIcon name="Icon-Undo" class="mr-3" />
-          <span>Cancel Reservation</span>
+          <span>{{ $t("cancelreservation.cancel_reservation") }}</span>
         </nuxt-link>
         <nuxt-link
           to="https://www.mystays.com/en/privacy-policy/"
           target="_blank"
           class="cursor-pointer"
         >
-          Privacy Policy
+          {{ $t("headers.private_policy") }}
         </nuxt-link>
       </div>
     </BaseContainer>

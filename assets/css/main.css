@@ -11,11 +11,20 @@
     --color-gradient-50: #C2A1FD;
     --color-gradient-100: #9154FD;
 
+    /* Yellow  */
+    --color-yellow-light: #fff6de;
+    --color-yellow: #ffd25d;
+
+
+
     /* Surface */
     --color-white: #FFFFFF;
     --color-light-gray: #F4F5F9;
     --color-light-purple: #F4F5F9;
     --color-gray-border: #DBDCDE;
+    --color-primary-light: #303f62; 
+    --color-primary: #232e48;
+    
 
 
     /* Theme  */
@@ -24,4 +33,20 @@
     --breakpoint-md: 62rem;
     --breakpoint-lg: 64rem;
     --breakpoint-xl: 92.5rem;
+
+
+    /* Font-Size */
+      --text-xxs: 0.625rem;
+      --text-11: 11px;
+      --text-xs: 0.75rem;
+      --text-13: 13px;
+      --text-sm: 0.875rem;
+      --text-15: 15px;
+      --text-base: 1rem;
+      --text-md: 1.125rem;
+      --text-lg: 1.25rem;
+      --text-xl: 1.5625rem;
+      --text-2xl: 1.75rem;
+      --text-xl: 2rem;
+      --text-4xl: 2.375rem;
 }

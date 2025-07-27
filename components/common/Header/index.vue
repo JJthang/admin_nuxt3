@@ -1,8 +1,8 @@
 <template>
   <div class="bg-primary">
-    <BaseContainer>
-      <CommonHeaderLanguage />
-    </BaseContainer>
+    <Container>
+      <HeaderLanguage />
+    </Container>
   </div>
 </template>
 

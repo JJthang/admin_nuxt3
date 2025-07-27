@@ -1,5 +1,5 @@
 <template>
-  <div class="text-midnight">xin chao moi nguoi</div>
+  <CommonHeaderLanguage />
 </template>
 
 <script setup>
